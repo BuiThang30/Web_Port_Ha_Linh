@@ -388,7 +388,7 @@ body {
 /* CONTENT BOX */
 
 .content{
-  width: 70%;
+  max-width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -834,6 +834,35 @@ body {
   line-height: 32px;
 }
 
+.slide a {
+  display: inline-block;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
+}
+
+
+  .slide ul, 
+  .slide li, 
+  .slide a, 
+  .slide p {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
+  .slide ul {
+    padding-left: 20px; /* tránh chữ dính vào khung */
+    list-style-position: inside;
+  }
+
+  .slide {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* ép mọi thứ không lòi ra */
+  }
+
+
 /* DOTS */
 .dots {
   display: flex;
@@ -1128,7 +1157,7 @@ body {
 /* ========== RESPONSIVE DESIGN ========== */
 
 /* ---------- <= 1200px ---------- */
-@media (max-width: 1280px) {
+@media (max-width: 1300px) {
   .title {
     font-size: 100px;
   }
@@ -1328,6 +1357,27 @@ body {
     font-size: 17px;
     padding: 16px 22px;
   }
+
+  .slide ul, 
+  .slide li, 
+  .slide a, 
+  .slide p {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
+  .slide ul {
+    padding-left: 20px; /* tránh chữ dính vào khung */
+    list-style-position: inside;
+  }
+
+  .slide {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* ép mọi thứ không lòi ra */
+  }
+
 }
 
 /* ---------- <= 1024px ---------- */
@@ -1576,6 +1626,26 @@ body {
   .pixel-btn {
     font-size: 16px;
     padding: 14px 20px;
+  }
+
+    .slide ul, 
+  .slide li, 
+  .slide a, 
+  .slide p {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
+  .slide ul {
+    padding-left: 20px; /* tránh chữ dính vào khung */
+    list-style-position: inside;
+  }
+
+  .slide {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* ép mọi thứ không lòi ra */
   }
 }
 
@@ -1859,6 +1929,26 @@ body {
     font-size: 14px;
     padding: 12px 18px;
   }
+
+    .slide ul, 
+  .slide li, 
+  .slide a, 
+  .slide p {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
+  .slide ul {
+    padding-left: 20px; /* tránh chữ dính vào khung */
+    list-style-position: inside;
+  }
+
+  .slide {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* ép mọi thứ không lòi ra */
+  }
 }
 
 /* ---------- <= 480px ---------- */
@@ -2096,6 +2186,26 @@ body {
     font-size: 12px;
     padding: 10px 14px;
     border-width: 2px;
+  }
+
+  .slide ul, 
+  .slide li, 
+  .slide a, 
+  .slide p {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
+  .slide ul {
+    padding-left: 20px; /* tránh chữ dính vào khung */
+    list-style-position: inside;
+  }
+
+  .slide {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* ép mọi thứ không lòi ra */
   }
 }
 
