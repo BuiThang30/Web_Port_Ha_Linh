@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ha Linh Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-about">
+  <div class="container">
+
+    <!-- ====== MÀN 1 ====== -->
+    <div id="intro-scene" class="scene active">
+      <h1 class="title2">World 1: About Me</h1>
+    </div>
+
+    <!-- ====== MÀN 2 ====== -->
+    <div id="main-scene" class="scene">
+      <div class="left-menu">
+        <h3><a href="/start" style="color: inherit; text-decoration: none;">Back to Start</a></h3>
+        <div>
+          <h2><a href="/about-me" style="color: inherit; text-decoration: none;">About Me</a></h2>
+          <p><a href="/culture" style="color: inherit; text-decoration: none;">Culture</a></p>
+          <p><a href="/art" style="color: inherit; text-decoration: none;">Art</a></p>
+          <p><a href="/communication-service" style="color: inherit; text-decoration: none;">Community Service</a></p>
+        </div>
+        <h4><a href="/final" style="color: inherit; text-decoration: none;">Skip to Final</a></h4>
+      </div>
+      <div class="content">
+        <!-- FORM GỐC -->
+        <div class="content-box" id="introBox">
+          <div class="content-text">
+            <h3>WORLD 1 UNLOCKED: The Prologue.</h3>
+            <p>Meet Linh, the main character of this adventure, a curious explorer powered by imagination and a love for storytelling.</p>
+            <p>Like any player at the start of their quest, I’m still leveling up: collecting experiences, acquiring skills, and shaping my own world—one pixel at a time.</p>
+            <h3 style="margin-bottom: 0;">NGUYEN VU HA LINH</h3>
+            <ul style="margin: 0;">
+              <li><p>Senior at Hanoi-Amsterdam High School for the Gifted</p></li>
+              <li><p>Specialized in English</p></li>
+            </ul>
+            <h3>Special Stats: Communication +10 | Creativity +10 | Empathy +8 | Curiosity +9</h3>
+          </div>
+          <div class="character">
+            <img id="character-img" src="image/aboutme1.png" alt="Character">
+          </div>
+        </div>
+
+        <!-- FORM HIỂN THỊ KHI NHẤN NÚT -->
+        <div class="content-box hidden" id="infoBox">
+          <h2 id="infoTitle"></h2>
+
+          <div class="slide-wrapper">
+            <div class="slide-inner" id="slideInner">
+              <img id="slideImg1" src="" alt="slide 1">
+              <img id="slideImg2" src="" alt="slide 2">
+            </div>
+          </div>
+
+          <div class="info-text" id="infoText">
+            <h3 id="infoSubTitle"></h3>
+            <p id="infoDescription"></p>
+          </div>
+        </div>
+
+
+        <!-- NÚT -->
+        <div class="button-box">
+          <button class="about-btn" onclick="showInfo('ambassador')">AMS AMBASSADOR WINNER OF 2024</button>
+          <button class="about-btn" onclick="showInfo('explorer')">CULTURE EXPLORER</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

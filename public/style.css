@@ -1,0 +1,2092 @@
+@font-face {
+  font-family: 'Chakra Petch';
+  src: url('font/ChakraPetch-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('font/Helvetica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('font/PressStart2P-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ========== CẤU TRÚC CHUNG ========== */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'ChakraPetch', sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: fadeIn 1s ease-in-out;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ========== BACKGROUND RIÊNG TỪNG TRANG ========== */
+.bg-start {
+  background-image: url('image/background-start.png');
+}
+
+.bg-about {
+  background-image: url('image/background-about-me.png');
+}
+
+.bg-communication {
+  background-image: url('image/background-communication-service.png');
+}
+
+.bg-culture{
+  background-image: url('image/background-culture.png');
+}
+
+.bg-art{
+  background-image: url('image/background-art.png');
+}
+/* ========== CONTAINER ========== */
+.container {
+  text-align: center;
+  color: #fff;
+  max-width: 100%;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+/* ========== TIÊU ĐỀ ========== */
+.title {
+  color: #FFC516;
+  text-shadow: 5px 5px 0 #F07E25;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFF;
+  font-family: 'Press Start 2P';
+  font-size: 128px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.title:hover{
+  color: #FFF;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFC516;
+  transform: scale(1.05);
+}
+
+.title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title3 {
+  color: #FFC516;
+  text-shadow: 5px 5px 0 #F07E25;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFF;
+  font-family: 'Press Start 2P';
+  font-size: 128px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.title4{
+  color: #FFC516;
+  text-shadow: 2.154px 2.154px 0 #F07E25;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFF;
+  font-family: "Press Start 2P";
+  font-size: 55.154px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title4:hover{
+  color: #FFF;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFC516;
+  transform: scale(1.05);
+}
+
+.title4-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ========== HỘP GIỚI THIỆU ========== */
+.intro-box {
+  padding: 25px;
+  line-height: 1.6;
+  width: 70%;
+  margin: 100px auto;
+  border-radius: 30px;
+  border: 3px solid #F07E25;
+  background: #FFF;
+}
+
+.intro-box p{
+  color: #F6A723;
+  text-align: center;
+  font-family: "Chakra Petch";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.intro-box strong {
+  font-weight: 700;
+}
+
+
+/* ========== NÚT ========== */
+.resume-btn {
+  padding: 15px 40px;
+  border-radius: 26.667px;
+  border: 2.667px solid #F4DE71;
+  background: #27A7FC;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #FFC516;
+  text-align: center;
+  text-shadow: 2px 2px 0 #F07E25;
+  font-family: "Press Start 2P";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.resume-btn:hover {
+  background: #FFC516;
+  color: #27A7FC;
+  transform: scale(1.05);
+}
+
+/* ========== TIÊU ĐỀ START ========== */
+.title1 {
+  color: #FFC516;
+  text-shadow: 5px 5px 0 #F07E25;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFF;
+  font-family: 'Press Start 2P';
+  font-size: 78px;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 150px;
+}
+
+/* ========== GRID 4 SERVER ========== */
+.server-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 80px auto;
+}
+
+.server-card {
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.server-card a {
+  text-decoration: none;
+}
+
+.server-card p{
+  color: #FFC516;
+  text-align: center;
+  text-shadow: 1.4px 1.4px 0 #F07E25;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFF;
+  font-family: "Press Start 2P";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 30vh;
+}
+.server-card img {
+  width: 30vh;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #ffcc00;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.server-card:hover {
+  transform: scale(1.05);
+}
+
+.server-card:hover img {
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+/* ========== TIÊU ĐỀ TRANG CON ========== */
+.title2 {
+  color: #FFC516;
+  text-shadow: 5px 5px 0 #F07E25;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFF;
+  font-family: 'Press Start 2P';
+  font-size: 48px;
+  font-style: normal;
+  line-height: normal;
+}
+
+
+/* ========== CẢNH ========== */
+.scene {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.scene.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* ========== MÀN 1 ========== */
+#intro-scene {
+  background: inherit;
+}
+
+/* ========== MÀN 2 ========== */
+#main-scene {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* LEFT MENU */
+.left-menu {
+  color: #FFC516;
+  text-shadow: 2px 2px #333;
+  width: 28%;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+
+.left-menu h2 {
+  color: #FFC516;
+  text-shadow: 4.444px 4.444px 0 #F07E25;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #FFF;
+  font-family: "Press Start 2P";
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.left-menu h2:hover{
+  color: #fff;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #FFC516;
+}
+
+.left-menu h3 {
+  color: #FFC516;
+  text-align: center;
+  text-shadow: 1.231px 1.231px 0 #F07E25;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFF;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.left-menu h3:hover{
+  color: #FFF;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFC516;
+}
+
+.left-menu h4 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.left-menu h4:hover{
+  color: #FFC516;
+}
+.left-menu p {
+  color: #FFC516;
+  text-align: left;
+  text-shadow: 1.778px 1.778px 0 #F07E25;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFF;
+  font-family: "Press Start 2P";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.left-menu p:hover{
+  color: #FFF;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFC516;
+}
+
+
+/* CONTENT BOX */
+
+.content{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.content-box {
+  color: #000;
+  padding-left: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 26.667px;
+  border: 2px solid #F07E25;
+  background: rgba(255, 255, 255, 0.70);
+}
+
+.content-text{
+  max-width: 55%;
+  height: auto;
+  margin: 25px 0;
+}
+
+.content-box h3{
+  color: #3E4D09;
+  font-family: "Chakra Petch";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--Static-Headline-Small-Line-Height, 32px);
+  text-align: left;
+}
+
+.content-box p{
+  color: #3E4D09;
+  font-family: "Chakra Petch";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--Static-Headline-Small-Line-Height, 32px);
+  text-align: left;
+  margin: 0;
+}
+
+/* CHARACTER IMAGE */
+.character {
+  flex: 0 0 41%;
+  max-height: 88%;
+  aspect-ratio: 3 / 4;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  right: -3%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.character img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.character img.fade-out {
+  opacity: 0;
+}
+
+.character img[src*="aboutme1.png"] {
+  transform: scale(1.18);
+  transform-origin: center bottom;
+}
+
+
+
+.button-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.about-btn{
+  width: 49%;
+  height: 180px;
+  color: #F7CD27;
+  text-align: center;
+  text-shadow: 1.778px 1.778px 0 #F07E25;
+  font-family: "Press Start 2P";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.25%;
+  border-radius: 26.667px;
+  border: 2.667px solid #F07E25;
+  background: #496D26;
+}
+
+.about-btn:hover {
+  background: #5a8631;
+  color: #fff;
+  border-color: #F7CD27;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+#infoBox {
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+  color: #3E4D09;
+  transition: all 0.5s ease;
+  align-items: start;
+  width: 96%;
+}
+
+#infoBox h2 {
+  color: #FFF;
+  text-align: left;
+  text-shadow: 1.778px 1.778px 0 #F07E25;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.25%;
+  max-width: 96%;
+  margin: 0 20px;
+  margin: 0 20px 40px;
+}
+
+.slide-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 96%;
+  margin: 0 auto 20px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-inner {
+  display: flex;
+  gap: 40px;
+  justify-content: start;
+  align-items: center;
+  transition: transform 1s ease-in-out;
+  width: 100%;
+  max-height: 304px;
+}
+
+.slide-inner img {
+  max-height: 298px;
+  width: auto;
+  max-width: 49%;
+  border-radius: 15px;
+  object-fit: none;
+  flex-shrink: 0;
+  border: 2px solid #F07E25;
+}
+
+
+.info-text h3 {
+  color: #3E4D09;
+  font-family: "Chakra Petch";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.info-text {
+  max-width: 96%;
+  margin: 0 20px;
+  color: #3E4D09;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.button-box-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0;
+  gap:10px;
+}
+
+.culture-btn{
+  width: 100%;
+  height: 50px;
+  color: #F7CD27;
+  text-align: center;
+  text-shadow: 1.778px 1.778px 0 #F07E25;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.25%;
+  border-radius: 26.667px;
+  border: 2.667px solid #F07E25;
+  background: #0E833F;
+}
+
+.culture-btn:hover {
+  background: #5a8631;
+  color: #fff;
+  border-color: #F7CD27;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+
+.communication-btn{
+  width: 100%;
+  height: 50px;
+  color: #F7CD27;
+  text-align: center;
+  text-shadow: 1.778px 1.778px 0 #F07E25;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.25%;
+  border-radius: 26.667px;
+  border: 2.667px solid #F07E25;
+  background: #6E21B7;
+}
+
+.communication-btn:hover {
+  background: #F7CD27;
+  color: #6E21B7;
+  border-color: #F7CD27;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+/* =============================== */
+/* SLIDER - SECTION */
+/* =============================== */
+
+#tuSuBox, #galleryBox, #newspaperBox {
+  font-family: "Chakra Petch", sans-serif;
+  color: #3a3a1a;
+  text-align: left;
+  padding: 60px 40px;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 26.667px;
+  border: 2.667px solid #F07E25;
+  background: rgba(255, 255, 255, 0.75);
+  position: relative;
+  flex-direction: column;
+}
+
+#cheerleadingBox, #musicalsBox, #filmBox, #visualsBox {
+  font-family: "Chakra Petch", sans-serif;
+  color: #3a3a1a;
+  text-align: left;
+  padding: 60px 40px;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 26.667px;
+  border: 2.667px solid #EF9CE8;
+  background: rgba(255, 255, 255, 0.75);
+  position: relative;
+  flex-direction: column;
+}
+
+#trucxanhBox, #amsBox, #fundBox{
+  font-family: "Chakra Petch", sans-serif;
+  color: #3a3a1a;
+  text-align: left;
+  padding: 60px 40px;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 26.667px;
+  border: 2.667px solid #EF9CE8;
+  background: rgba(255, 255, 255, 0.75);
+  position: relative;
+  flex-direction: column;
+}
+
+/* Title */
+#tuSuBox .slide-title, #galleryBox .slide-title, #newspaperBox .slide-title {
+  color: #FFFDF1;
+  text-align: left;
+  text-shadow: 1.778px 1.778px 0 #F07E25;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.25%;
+  margin: 0;
+  width: 95%;
+}
+
+/* Title */
+#cheerleadingBox .slide-title, #musicalsBox .slide-title, #filmBox .slide-title, #visualsBox .slide-title{
+  color: #FFFDF1;
+  text-align: left;
+  text-shadow: 1.778px 1.778px 0 #F07E25;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.25%;
+  margin: 0;
+  width: 95%;
+}
+
+#trucxanhBox .slide-title, #amsBox .slide-title, #fundBox .slide-title{
+  color: #FFFDF1;
+  text-align: left;
+  text-shadow: 1.778px 1.778px 0 #F07E25;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.25%;
+  margin: 0;
+  width: 95%;
+}
+
+/* SLIDER WRAPPER */
+.slider {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* SLIDES CONTAINER */
+.slides {
+  position: relative;
+  width: 100%;
+  transition: height 0.5s ease;
+}
+
+/* MỖI SLIDE */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.5s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+  position: relative;
+  z-index: 10;
+}
+
+/* HÌNH ẢNH TRONG SLIDE */
+.slide-image {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.slide-image img {
+  width: auto;
+  height: 298px;
+  border-radius: 15px;
+  border: 2px solid #F07E25;
+}
+
+.slide-image1 {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.slide-image1  img {
+  width: auto;
+  height: 195.677px;;
+  border-radius: 15px;
+  border: 2px solid #F07E25;
+}
+
+.slide-image2 {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.slide-image2  img {
+  width: auto;
+  height: 199px;;
+  border-radius: 15px;
+  border: 2px solid #DD58D1;
+}
+
+
+/* TEXT TRONG SLIDE */
+.slide h3 {
+  color: #485C20;
+  font-family: "Chakra Petch";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0;
+}
+
+.slide p {
+  color: #485C20;
+  font-family: "Chakra Petch";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+/* DOTS */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #F07E25;
+  border: 1px solid #F07E25;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.arrow {
+  display: none;
+}
+
+
+.button-box-2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.art-btn{
+  width: 49%;
+  height: 64px;
+  color: #F7CD27;
+  text-align: center;
+  text-shadow: 1.778px 1.778px 0 #F07E25;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.25%;
+  border-radius: 26.667px;
+  border: 2.667px solid #F07E25;
+  background: #8C079B;
+}
+
+.art-btn:hover {
+  background: #ca18de;
+  color: #fff;
+  border-color: #F7CD27;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+
+.poem-section {
+  margin-top: 20px;
+  color: #0D0787;
+  font-family: "Chakra Petch";
+}
+
+.poem-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: nowrap;
+  width: max-content
+}
+
+.poem-columns .column {
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1.7;
+  font-size: 20px;
+  text-align: left;
+}
+.poem-columns p{
+  margin: 20px;
+  color: #0D0787;
+}
+
+.view-btn{
+  border-radius: 30px;
+  border: 3px solid #F9D950;
+  background: #0D0787;
+  color: #F7CD27;
+  text-align: center;
+  text-shadow: 1.778px 1.778px 0 #F07E25;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.25%;
+  padding: 20px;
+  width: 300px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover{
+  background: #F7CD27;
+  color: #0D0787;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+
+.review-section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+
+/* Cột trái */
+.review-left {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-btn {
+  border-radius: 26.667px;
+  border: 2.667px solid #F07E25;
+  background: #8C079B;
+  color: #F7CD27;
+  text-align: center;
+  text-shadow: 1.778px 1.778px 0 #F07E25;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+  background: #F7CD27;
+  color: #8C079B;
+}
+
+/* Cột phải */
+.review-right {
+  flex: 1;
+  position: relative;
+  border-radius: 26.667px;
+  border: 2.667px solid #DD58D1;
+  background: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+}
+
+/* Slider */
+.review-slider {
+  position: relative;
+}
+
+.review-slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  animation: fade 0.6s ease;
+}
+
+.review-slide.active {
+  display: flex;
+}
+
+.review-slide h2 {
+  color: #DD58D1;
+  text-align: center;
+  text-shadow: 1.778px 1.778px 0 #6E21B7;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.review-container {
+  width: 80%;
+  overflow: hidden;
+}
+
+.review-images {
+  float: left;
+  margin: 20px 30px 10px 0;
+  shape-outside: inset(0 round 15px);
+  -webkit-shape-outside: inset(0 round 15px);
+  shape-margin: 15px;
+  height: fit-content;
+}
+
+.review-images img {
+  display: block;
+  height: 331px;
+  width: auto;
+  border-radius: 15px;
+  border: 2px solid #DD58D1;
+  object-fit: cover;
+  margin: 0 0 15px 0;
+}
+
+
+.review-text {
+  color: #0D0787;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+}
+
+
+.review-container::after {
+  content: "";
+  grid-column: 2;
+}
+
+
+/* Dấu chấm */
+.review-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 0 30px;
+}
+
+.review-dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #8C079B;
+  border: 1px solid #8C079B;
+  opacity: 0.5;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.review-dots span.active {
+  opacity: 1;
+  border: 1px solid #8C079B;
+  background: none;
+}
+
+/* Hiệu ứng */
+@keyframes fade {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.pixel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.pixel-btn {
+  font-family: "Press Start 2P";
+  font-size: 18px;
+  border: 3px solid #F9D950;
+  background: #0D0787;
+  color: #F7CD27;
+  padding: 18px 24px;
+  border-radius: 30px;
+  text-shadow: 2px 2px 0 #F7CD27;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.pixel-btn:hover {
+  background: #F7CD27;
+  color: #0D0787;
+  transform: scale(1.05);
+  text-shadow: 2px 2px 0 #0D0787;
+}
+
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* ---------- <= 1200px ---------- */
+@media (max-width: 1280px) {
+  .title {
+    font-size: 100px;
+  }
+
+  .title1 {
+    font-size: 65px;
+    margin-bottom: 100px;
+  }
+
+  .title3 {
+    font-size: 100px;
+  }
+
+  .title4{
+    font-size: 50px;
+  }
+
+  .intro-box {
+    width: 80%;
+    padding: 25px;
+  }
+
+  .server-grid {
+    gap: 30px;
+  }
+
+  .server-card img {
+    width: 25vh;
+  }
+
+  .server-card p {
+    font-size: 22px;
+  }
+
+  .resume-btn {
+    font-size: 18px;
+    padding: 12px 32px;
+  }
+
+  .title2 {
+    font-size: 45px;
+    text-shadow: 4px 4px 0 #F07E25;
+  }
+
+  .left-menu h2 {
+    font-size: 58px;
+  }
+
+  .left-menu h3, .left-menu h4 {
+    font-size: 20px;
+  }
+
+  .left-menu p {
+    font-size: 22px;
+  }
+
+  .content-box {
+    padding-left: 30px;
+  }
+
+  .character {
+    width: 38%;
+  }
+
+  .about-btn {
+    font-size: 18px;
+    height: 160px;
+  }
+  .art-btn{
+    font-size: 18px;
+  }
+  .culture-btn{
+    font-size: 18px;
+  }
+
+  .communication-btn{
+    font-size: 18px;
+  }
+
+  #infoBox h2 {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+  .slide-inner img {
+    height: 260px;
+    max-width: 48%;
+  }
+  .info-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  #tuSuBox, #galleryBox, #newspaperBox {
+    padding: 50px 35px;
+    max-width: 95%;
+  }
+
+  #tuSuBox .slide-title,
+  #galleryBox .slide-title,
+  #newspaperBox .slide-title {
+    font-size: 22px;
+  }
+
+  #cheerleadingBox, #musicalsBox, #filmBox, #visualsBox{
+    padding: 50px 35px;
+    max-width: 95%;
+  }
+
+  #cheerleadingBox .slide-title,
+  #musicalsBox .slide-title,
+  #filmBox .slide-title,
+  #visualsBox .slide-title{
+    font-size: 22px;
+  }
+
+  #trucxanhBox, #amsBox, #fundBox{
+    padding: 50px 35px;
+    max-width: 95%;
+  }
+
+  #trucxanhBox .slide-title,
+  #amsBox.slide-title,
+  #fundBox.slide-title{
+    font-size: 22px;
+  }
+
+  .slide h3 {
+    font-size: 19px;
+  }
+
+  .slide p {
+    font-size: 17px;
+  }
+
+  .slide-image img {
+    height: 270px;
+  }
+
+  .slide-image1 img {
+    height: 170px;
+  }
+
+  .slide-image2 img {
+    height: 180px;
+  }
+
+
+  .poem-columns {
+    gap: 100px;
+  }
+
+  .poem-columns .column {
+    font-size: 18px;
+  }
+
+  .view-btn {
+    font-size: 24px;
+    padding: 20px;
+    width: 300px;
+  }
+
+  .review-section {
+    padding: 30px;
+  }
+
+  .back-btn {
+    width: 250px;
+    font-size: 20px;
+    padding: 18px;
+  }
+
+  .review-slide h2 {
+    font-size: 22px;
+  }
+
+  .review-container {
+    width: 85%;
+  }
+
+  .review-images img {
+    height: 300px;
+  }
+
+  .review-text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .pixel-nav {
+    gap: 35px;
+    margin-top: 28px;
+  }
+
+  .pixel-btn {
+    font-size: 17px;
+    padding: 16px 22px;
+  }
+}
+
+/* ---------- <= 1024px ---------- */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 80px;
+    text-shadow: 4px 4px 0 #F07E25;
+  }
+
+  .title1 {
+    font-size: 54px;
+    margin-bottom: 80px;
+  }
+
+  .title3{
+    font-size: 80px;
+    text-shadow: 4px 4px 0 #F07E25;
+  }
+
+  .title4{
+    font-size: 45px;
+  }
+
+  .intro-box {
+    width: 85%;
+    padding: 20px;
+  }
+
+  .intro-box p {
+    font-size: 20px;
+  }
+
+  .server-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .server-card img {
+    width: 26vh;
+  }
+
+  .resume-btn {
+    font-size: 16px;
+    padding: 10px 28px;
+  }
+
+  #main-scene {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .left-menu {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .left-menu h2 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .left-menu p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .content-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .content-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .character {
+    width: 60%;
+    right: 0;
+  }
+
+  .about-btn {
+    font-size: 16px;
+    height: 140px;
+  }
+
+  .culture-btn{
+    font-size: 16px;
+  }
+
+  .communication-btn{
+    font-size: 16px;
+  }
+
+  .slide-inner {
+    gap: 24px;
+  }
+  .slide-inner img {
+    height: 230px;
+    max-width: 47%;
+  }
+  #infoBox h2 {
+    font-size: 20px;
+  }
+  .info-text {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  #tuSuBox, #galleryBox, #newspaperBox {
+    padding: 40px 25px;
+  }
+
+  #tuSuBox .slide-title,
+  #galleryBox .slide-title,
+  #newspaperBox .slide-title {
+    font-size: 20px;
+  }
+
+  #cheerleadingBox, #musicalsBox, #filmBox, #visualsBox{
+    padding: 40px 25px;
+  }
+
+  #cheerleadingBox .slide-title,
+  #musicalsBox .slide-title,
+  #filmBox .slide-title,
+  #visualsBox .slide-title{
+    font-size: 20px;
+  }
+
+  #trucxanhBox, #amsBox, #fundBox{
+    padding: 40px 25px;
+  }
+
+  #trucxanhBox .slide-title,
+  #amsBox.slide-title,
+  #fundBox.slide-title{
+    font-size: 20px;
+  }
+
+  .slide h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .slide p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .slide-image img {
+    height: 240px;
+  }
+
+  .slide-image1 img {
+    height: 150px;
+  }
+
+  .slide-image2 img {
+    height: 160px;
+  }
+
+  .slide-image,
+  .slide-image1,
+  .slide-image2 {
+    justify-content: center;
+  }
+
+  .poem-columns {
+    gap: 60px;
+  }
+
+  .poem-columns .column {
+    font-size: 17px;
+    min-width: 45%;
+  }
+
+  .view-btn {
+    font-size: 20px;
+    padding: 18px;
+    width: 250px;
+  }
+
+  .review-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .review-left {
+    flex: unset;
+    width: 100%;
+    align-items: center;
+  }
+
+  .back-btn {
+    width: 80%;
+    max-width: 280px;
+    font-size: 18px;
+  }
+
+  .review-right {
+    width: 100%;
+  }
+
+  .review-container {
+    width: 90%;
+  }
+
+  .review-images {
+    float: none;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+
+  .review-images img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 0 auto 15px;
+  }
+
+  .review-text {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .pixel-nav {
+    gap: 28px;
+    margin-top: 25px;
+  }
+
+  .pixel-btn {
+    font-size: 16px;
+    padding: 14px 20px;
+  }
+}
+
+/* ---------- <= 768px ---------- */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 60px;
+    text-shadow: 3px 3px 0 #F07E25;
+  }
+
+  .title1 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+
+  .title3{
+    font-size: 60px;
+    text-shadow: 3px 3px 0 #F07E25;
+  }
+
+  .title4{
+    font-size: 40px;
+  }
+
+  .intro-box {
+    width: 90%;
+    padding: 18px;
+    margin: 60px auto;
+  }
+
+  .intro-box p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .server-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .server-card img {
+    width: 60vw;
+  }
+
+  .server-card p {
+    font-size: 20px;
+    max-width: 60vw;
+  }
+
+  .resume-btn {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+
+  .title2 {
+    font-size: 40px;
+    text-shadow: 3px 3px 0 #F07E25;
+  }
+
+  .left-menu h2 {
+    font-size: 38px;
+  }
+
+  .left-menu p {
+    font-size: 18px;
+  }
+  .content{
+    width: 100%;
+  }
+  .content-box {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .content-text {
+    max-width: 100%;
+  }
+
+  .character {
+    width: 75%;
+  }
+
+  .button-box{
+    flex-direction: column;
+    gap:20px;
+  }
+
+  .button-box-2{
+    flex-direction: column;
+    gap:20px;
+  }
+
+  .about-btn {
+    width: 100%;
+    font-size: 14px;
+    height: 120px;
+  }
+
+  .art-btn {
+    width: 100%;
+    font-size: 14px;
+    height: 50px;
+  }
+
+  .culture-btn{
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .communication-btn{
+    font-size: 14px;
+    width: 100%;
+  }
+
+
+  #infoBox {
+    align-items: center;
+    text-align: center;
+  }
+  #infoBox h2 {
+    font-size: 18px;
+    margin: 0 0 24px;
+  }
+  .slide-inner {
+    flex-direction: column;
+    gap: 16px;
+    max-height: none;
+    width: 100%;
+  }
+  .slide-inner img {
+    height: auto;
+    width: 90%;
+    max-width: 100%;
+    border: none;
+  }
+  .info-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .info-text h3 {
+    font-size: 18px;
+  }
+
+  #tuSuBox, #galleryBox, #newspaperBox {
+    padding: 30px 20px;
+    max-width: 95%;
+  }
+
+  #tuSuBox .slide-title,
+  #galleryBox .slide-title,
+  #newspaperBox .slide-title {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #cheerleadingBox, #musicalsBox, #filmBox, #visualsBox{
+    padding: 30px 20px;
+    max-width: 95%;
+  }
+
+  #cheerleadingBox .slide-title,
+  #musicalsBox .slide-title,
+  #filmBox .slide-title,
+  #visualsBox .slide-title{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #trucxanhBox, #amsBox, #fundBox{
+    padding: 30px 20px;
+    max-width: 95%;
+  }
+
+  #trucxanhBox .slide-title,
+  #amsBox.slide-title,
+  #fundBox.slide-title{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .slide-image img,
+  .slide-image1 img,
+  .slide-image2 img {
+    width: 90%;
+    height: auto;
+  }
+
+  .slide-image,
+  .slide-image1,
+  .slide-image2 {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .slide h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .slide p {
+    font-size: 15px;
+    line-height: 26px;
+    text-align: justify;
+  }
+
+  .dots {
+    gap: 8px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+
+  .poem-columns {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .poem-columns .column {
+    min-width: 90%;
+    font-size: 16px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .view-btn {
+    font-size: 16px;
+    padding: 15px;
+    width: 200px;
+  }
+
+  .review-section {
+    padding: 20px;
+  }
+
+  .review-slide {
+    padding: 25px;
+  }
+
+  .review-slide h2 {
+    font-size: 20px;
+  }
+
+  .back-btn {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .review-images img {
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+  }
+
+  .review-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .pixel-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .pixel-btn {
+    width: 80%;
+    max-width: 260px;
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+}
+
+/* ---------- <= 480px ---------- */
+@media (max-width: 480px) {
+  .title {
+    font-size: 44px;
+    text-shadow: 2px 2px 0 #F07E25;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .title1 {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+
+  .title3{
+    font-size: 44px;
+    text-shadow: 2px 2px 0 #F07E25;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .title4{
+    font-size: 32px;
+  }
+
+  .intro-box {
+    width: 90%;
+    padding: 12px;
+    margin: 40px auto;
+  }
+
+  .intro-box p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .server-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .server-card img {
+    width: 80vw;
+  }
+
+  .server-card p {
+    font-size: 18px;
+    max-width: 80vw;
+  }
+
+  .resume-btn {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+
+  .title2 {
+    font-size: 30px;
+  }
+
+  .left-menu h2 {
+    font-size: 30px;
+  }
+
+  .left-menu p {
+    font-size: 16px;
+  }
+
+  .content-box {
+    flex-direction: column;
+    padding: 10px;
+    border-width: 2px;
+  }
+
+  .character {
+    width: 90%;
+  }
+
+  .character img {
+    object-fit: contain;
+  }
+
+  .about-btn {
+    font-size: 12px;
+    height: 100px;
+  }
+
+  .culture-btn{
+    font-size: 12px;
+  }
+
+  .communication-btn{
+    font-size: 12px;
+  }
+
+  #infoBox {
+    padding: 10px;
+  }
+  #infoBox h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .slide-inner img {
+    width: 100%;
+    height: auto;
+  }
+  .info-text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .info-text h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #tuSuBox, #galleryBox, #newspaperBox {
+    padding: 20px 15px;
+  }
+
+  #tuSuBox .slide-title,
+  #galleryBox .slide-title,
+  #newspaperBox .slide-title {
+    font-size: 14px;
+  }
+
+  #cheerleadingBox, #musicalsBox, #filmBox, #visualsBox{
+    padding: 20px 10px;
+  }
+
+  #cheerleadingBox .slide-title,
+  #musicalsBox .slide-title,
+  #filmBox .slide-title,
+  #visualsBox .slide-title{
+    font-size: 14px;
+  }
+
+  #trucxanhBox, #amsBox, #fundBox{
+    padding: 20px 10px;
+  }
+
+  #trucxanhBox .slide-title,
+  #amsBox.slide-title,
+  #fundBox.slide-title{
+    font-size: 14px;
+  }
+
+  .slide-image img {
+    height: auto;
+  }
+
+  .slide-image1 img {
+    height: auto;
+  }
+
+  .slide-image2{
+    height: auto;
+  }
+
+  .slide h3 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .slide p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .dots {
+    margin-top: 10px;
+  }
+
+  .poem-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .poem-columns .column {
+    min-width: 95%;
+    font-size: 15px;
+    line-height: 1.5;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .view-btn {
+    font-size: 12px;
+    padding: 12px;
+    width: 160px;
+  }
+
+  .review-section {
+    padding: 10px;
+  }
+
+  .back-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .review-slide {
+    padding: 20px 15px;
+  }
+
+  .review-slide h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .review-images img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .review-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .review-dots {
+    gap: 6px;
+    margin: 20px 0;
+  }
+
+  .review-dots span {
+    width: 10px;
+    height: 10px;
+  }
+
+  .pixel-btn {
+    width: 90%;
+    font-size: 12px;
+    padding: 10px 14px;
+    border-width: 2px;
+  }
+}
+

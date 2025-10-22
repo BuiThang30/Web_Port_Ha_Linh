@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ha Linh Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-culture">
+  <div class="container">
+
+    <!-- ====== MÀN 1 ====== -->
+    <div id="intro-scene" class="scene active">
+      <h1 class="title2">World 2: Culture</h1>
+    </div>
+
+    <!-- ====== MÀN 2 ====== -->
+    <div id="main-scene" class="scene">
+      <div class="left-menu">
+        <h3><a href="/start" style="color: inherit; text-decoration: none;">Back to Start</a></h3>
+        <div>
+          <p><a href="/about-me" style="color: inherit; text-decoration: none;">About Me</a></p>
+          <h2 style="margin: 0; text-align: left;">
+            <span style="display: inline-block; transform: scale(0.7); transform-origin: left top;">
+              <a href="/culture" style="color: inherit; text-decoration: none;">Culture</a>
+            </span>
+          </h2>
+          <p><a href="/art" style="color: inherit; text-decoration: none;">Art</a></p>
+          <p><a href="/communication-service" style="color: inherit; text-decoration: none;">Community<br>Service</a></p>
+        </div>
+        <h4><a href="/final" style="color: inherit; text-decoration: none;">Skip to Final</a></h4>
+      </div>
+      <div class="content">
+        <!-- FORM GỐC -->
+        <div class="content-box" id="introBox">
+          <div class="content-text" style="max-width: 95%;">
+            <h3>WORLD 2 UNLOCKED: Exploration.</h3>
+            <h3>MY STARTING TOWN - WHERE THE ADVENTURE BEGINS</h3>
+            <p>Vietnamese culture has always played a major part in my upbringing. When I was little, my grandfather used to teach me how to make Chung cake—a special traditional rice cake eaten every Lunar New Year. My parents introduced me to Ao dai—Vietnam’s national costume—and took me to pagodas every year to pray for good luck and fortune. My teachers at school told me stories about ancient warriors and kings who ruled and protected the nation, alongside the daily life of those who existed centuries before our time.</p>
+            <p>Ever since then, I adopted a sense of pride in my roots, and, as I got older, the longing to share our story with the world. With this cause, I began my journey as a culture enthusiast and ambassador, finding new ways to spread the passion to youths and adults alike.</p>
+            <h3>New Stats Acquired: Cultural Narration +10]</h3>
+          </div>
+        </div>
+
+        <!-- FORM TỰ SỬ -->
+        <div class="content-box hidden" id="tuSuBox">
+          <h2 style="margin-bottom: 20px;" class="slide-title">TU SU History</h2>
+
+          <div class="slider">
+            <button class="arrow left" onclick="changeSlide(-1)">&#10094;</button>
+
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <div class="slide active">
+                <div class="slide-image">
+                  <img src="image/tusu1.png" alt="Demo Flashcards 1">
+                </div>
+                <h3 style="margin-bottom: 30px;"><strong>QUEST COMPLETED: TỰ SỰ HISTORY</strong></h3>
+                <p>As a brainchild born from my love for Vietnamese history and culture, 
+                Tự Sự is a History Project founded in early 2024 with the aim to spread awareness 
+                about different aspects of our heritage.</p>
+              </div>
+
+              <!-- SLIDE 2 -->
+              <div class="slide">
+                <div class="slide-image">
+                  <img src="image/tusu2.png" alt="Tran Dynasty Flashcards 1">
+                  <img src="image/tusu3.png" alt="Tran Dynasty Flashcards 2">
+                </div>
+                <h3 style="margin: 0;">CHECKPOINT 1:</h3>
+                <h3 style="margin-bottom: 30px;">TRAN DYNASTY FLASHCARDS</h3>
+                <p>In season 1 of Tự Sử, our team decided to create a pack of educational and interactive flashcards surrounding the topic of the Tran Dynasty - one of the major eras of Vietnamese history. At the same time, we also posted informative posts about the history of the Tran Dynasty in the form of colored comic strips to our Facebook page. In the end, approximately 200 flashcard packs were sold and delivered, allowing us to donate 17 million VND to the Quang Dong Assembly Hall, a culture and arts preservation center in Hanoi.</p>
+              </div>
+
+              <!-- SLIDE 3 -->
+              <div class="slide">
+                <div class="slide-image">
+                  <img src="image/tusu2.png" alt="Tran Dynasty Flashcards 1">
+                  <img src="image/tusu3.png" alt="Tran Dynasty Flashcards 2">
+                </div>
+                <h3>CHECKPOINT 2:</h3>
+                <h3>TRADITIONAL FOLK GAMES WEBSITE</h3>
+                <h3>Website: <a href="https://tusuhistory.com/home" target="_blank">https://tusuhistory.com/home</a></h3>
+                <p>Following the success of season 1, I decided to proceed with the project’s next season,
+                this time with the goal of creating and managing a website about Vietnamese traditional folk games.
+                On our website, not only are there informative posts about a variety of games, 
+                there is also a fun quiz section along with an interview we conducted 
+                with a representative from the Vietnam Museum of Ethnology.</p>
+              </div>
+            </div>
+
+            <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
+          </div>
+
+          <div class="dots" id="dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+          </div>
+
+          <div class="pixel-nav">
+            <button class="pixel-btn" onclick="changeSlide(-1)">⟸ Prev</button>
+            <button class="pixel-btn" onclick="changeSlide(1)">Next ⟹</button>
+          </div>
+        </div>
+
+
+         <!-- FORM GALLERY -->
+        <div class="content-box hidden" id="galleryBox">
+          <h2 style="margin-bottom: 20px;" class="slide-title">"Where The Light Shines" Gallery</h2>
+
+          <div class="slider">
+            <button class="arrow left" onclick="changeSlide(-1)">&#10094;</button>
+
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <div class="slide active">
+                <div class="slide-image1">
+                  <img src="image/gallery1.png">
+                  <img src="image/gallery2.png">
+                  <img src="image/gallery3.png">
+                </div>
+                <h3 style="margin-bottom: 30px;">MISSION ACCOMPLISHED: CHARITY ART AUCTION AND GALLERY</h3>
+                <p>Besides my love for history, I also share a deep rooted passion for arts and paintings about Vietnam’s beauty, especially when they encase a charitable cause. In our charity online auction and art gallery event “Where The Light Shines”, organized in partnership with Sach Vung Cao Charity Club, we managed to sell multiple paintings, raising 50 million VND in funds to equip a computer lab for 2 schools. Following the main event, we also visited the schools to inaugurate the computer lab, deliver gifts, and hold talks on cultural and educational exchange.</p>
+              </div>
+            </div>
+            <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
+          </div>
+        </div>
+
+
+        <!-- FORM NEWSPAPER INTERN -->
+        <div class="content-box hidden" id="newspaperBox">
+          <h2 style="margin-bottom: 20px;" class="slide-title">NEWSPAPER INTERN</h2>
+
+          <div class="slider">
+            <button class="arrow left" onclick="changeSlide(-1)">&#10094;</button>
+
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <div class="slide active">
+                <div class="slide-image">
+                </div>
+                <h3 style="margin-bottom: 30px;">NEW EXPERIENCE GAINED: NEWSPAPER INTERN</h3>
+                <p>In early 2025, I gained the invaluable opportunity to work as a newspaper intern in the Culture section of Hà Nội Mới - the official newspaper of the Hanoi Party Committee. During this time, I interviewed the President of the Hanoi Union of Literature and Arts Associations for a feature series on the development of history, society, and culture marking the 80th anniversary of the August Revolution. Following this, I also had the rare chance to interview the Director of the Thăng Long Heritage Conservation Center for an article on an exhibition at the strategic bunkers in the Thăng Long Imperial Citadel. Not only did this internship period allow me to develop my skills in the Media field, but it also helped me accumulate a lot of knowledge about the beautiful aspects of humanities and culture.</p>
+              </div>
+
+              <!-- SLIDE 2 -->
+              <div class="slide">
+                <div class="slide-image">
+                </div>
+                <h3 style="margin: 0;">My works:</h3>
+                <ul>
+                  <li>
+                    <p><a href="https://hanoimoi.vn/hanh-trinh-cach-mang-cua-bac-ho-o-thai-lan-710247.html?gidzl=F5Vl4qcx3aGzJkmLJAm6GZv1unHKh5CHSqxYJWAZLnz_JBOV3FHN67nAjnjSf5CRBKpY6JP4szDcIhy5G0">https://hanoimoi.vn/hanh-trinh-cach-mang-cua-bac-ho-o-thai-lan-710247.html?gidzl=F5Vl4qcx3aGzJkmLJAm6GZv1unHKh5CHSqxYJWAZLnz_JBOV3FHN67nAjnjSf5CRBKpY6JP4szDcIhy5G0</a></p>
+                  </li>
+                  <li>
+                    <p><a href="https://hanoimoi.vn/trien-lam-doc-dao-trong-cac-ham-chien-luoc-tai-hoang-thanh-thang-long-713189.html">https://hanoimoi.vn/trien-lam-doc-dao-trong-cac-ham-chien-luoc-tai-hoang-thanh-thang-long-713189.html</a></p>
+                  </li>
+                  <li>
+                    <p><a href="https://hanoimoi.vn/van-hoc-nghe-thuat-thu-do-dong-hanh-cung-dat-nuoc-tien-vao-ky-nguyen-moi-712759.html">https://hanoimoi.vn/van-hoc-nghe-thuat-thu-do-dong-hanh-cung-dat-nuoc-tien-vao-ky-nguyen-moi-712759.html</a></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
+          </div>
+
+          <div class="dots" id="dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+          </div>
+
+          <div class="pixel-nav">
+            <button class="pixel-btn" onclick="changeSlide(-1)">⟸ Prev</button>
+            <button class="pixel-btn" onclick="changeSlide(1)">Next ⟹</button>
+          </div>
+        </div>
+
+        <div class="button-box-1">
+          <button class="culture-btn" onclick="showContent('tuSuBox')">TU SU History</button>
+          <button class="culture-btn" onclick="showContent('galleryBox')">"Where The Light Shines" Gallery</button>
+          <button class="culture-btn" onclick="showContent('newspaperBox')">NEWSPAPER INTERN</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

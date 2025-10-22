@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ha Linh Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-communication">
+  <div class="container">
+
+    <!-- ====== MÀN 1 ====== -->
+    <div id="intro-scene" class="scene active">
+      <h1 class="title2">World 4: Community Service</h1>
+    </div>
+
+    <!-- ====== MÀN 2 ====== -->
+    <div id="main-scene" class="scene">
+      <div class="left-menu">
+        <h3><a href="/start" style="color: inherit; text-decoration: none;">Back to Start</a></h3>
+        <div>
+          <p><a href="/about-me" style="color: inherit; text-decoration: none;">About Me</a></p>
+          <p><a href="/culture" style="color: inherit; text-decoration: none;">Culture</a></p>
+          <p><a href="/art" style="color: inherit; text-decoration: none;">Art</a></p>
+          <h2 style="margin: 0; text-align: left;">
+            <span style="display: inline-block; transform: scale(0.55); transform-origin: left top;">
+              <a href="/communication-service" style="color: inherit; text-decoration: none;">Community Service</a>
+            </span>
+          </h2>
+        </div>
+        <h4><a href="/final" style="color: inherit; text-decoration: none;">Skip to Final</a></h4>
+      </div>
+      <div class="content">
+        <!-- FORM GỐC -->
+        <div class="content-box" id="introBox">
+          <div class="content-text" style="max-width: 95%;">
+            <h3>WORLD 4 UNLOCKED: Co-op Mode.</h3>
+            <p>As in most adventures and movies, true heroes build and conquer worlds—together. Hand in hand, I genuinely believe that one small action could be the missing puzzle piece to change the entire picture. Thus, I decided to employ my previously acquired skills to give back to the community in my own ways, and inspire others to do the same.</p>
+            <h3 style="margin-bottom: 200px;">[Ultimate Achievement Unlocked: Empathy in Action 🏆]</h3>
+          </div>
+        </div>
+
+        <!-- FORM TRUC XANH -->
+        <div class="content-box hidden" id="trucxanhBox">
+          <h2 style="margin-bottom: 20px;" class="slide-title">Truc Xanh Fund</h2>
+
+          <div class="slider">
+            <button class="arrow left" onclick="changeSlide(-1)">&#10094;</button>
+
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <div class="slide active">
+                <div class="slide-image1">
+                  <img src="image/trucxanh1.png">
+                  <img src="image/trucxanh2.png">
+                  <img src="image/trucxanh3.png">
+                </div>
+                <h3 style="margin-bottom: 30px; color:#30104D;"><strong>MAJOR QUEST: TRUC XANH FUND</strong></h3>
+                <p style="color:#30104D;">Last year, my aunt and uncle, who live in Southern Vietnam, told me the story of a charity nursing home they frequently visited that had run out of funds to purchase hospital beds and support newcomers. After learning about this, I proposed an idea to them: a charity fund dedicated to fundraising for that very purpose. And that is how Truc Xanh Charity Fund came to be. Last year’s summer, we managed to raise more than 51 million VND and donated 8 hospital beds to the nursing home. Me and my team also personally visited the home to deliver the beds and chat with the elderly residents there.</p>
+              </div>
+            </div>
+
+            <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
+          </div>
+        </div>
+
+
+         <!-- FORM Ams Ambassador Charity Trip -->
+        <div class="content-box hidden" id="amsBox">
+          <h2 style="margin-bottom: 20px;" class="slide-title">Ams Ambassador Charity Trip</h2>
+
+          <div class="slider">
+            <button class="arrow left" onclick="changeSlide(-1)">&#10094;</button>
+
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <div class="slide active">
+                <div class="slide-image1">
+                  <img src="image/ams1.png">
+                  <img src="image/ams2.png">
+                  <img src="image/ams3.png">
+                </div>
+                <h3 style="margin-bottom: 30px; color:#30104D;">TEAM QUEST: AMS AMBASSADOR CHARITY TRIP</h3>
+                <p style="color:#30104D;">On my journey as Ams Ambassador, I also had the opportunity to go on a charity trip to Hanoi’s Center for Social Protection 4 as a school representative and performed songs, dances, organized games to play with the children there. Our team also donated books to the Center and renovated the library, and finally ending our trip by gifting the Center a colorful painting we Ambassadors created together</p>
+              </div>
+            </div>
+            <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
+          </div>
+        </div>
+
+
+        <!-- FORM The 1% Fund -->
+        <div class="content-box hidden" id="fundBox">
+          <h2 style="margin-bottom: 20px;" class="slide-title">The 1% Fund</h2>
+
+          <div class="slider">
+            <button class="arrow left" onclick="changeSlide(-1)">&#10094;</button>
+
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <div class="slide active">
+                <div class="slide-image1">
+                  <img src="image/fund1.png">
+                  <img src="image/fund2.png">
+                  <img src="image/fund3.png">
+                </div>
+                <h3 style="margin-bottom: 30px; color:#30104D;">SIDE QUEST: THE 1% FUND</h3>
+                <p>As Head of Public Relations of The 1% Fund Charity Project, I contributed to the fundraising process of the events San and Mot - a DIY workshop and a book fair respectively. For our final event, Gom, we organized a charity trip to donate gifts and make traditional cakes with residents at Quynh Hoa vocational training center, combining our love for culture and charitable causes.</p>
+              </div>
+            </div>
+            <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
+          </div>
+        </div>
+
+        <div class="button-box-1">
+          <button class="communication-btn" onclick="showContent('trucxanhBox')">Truc Xanh Fund</button>
+          <button class="communication-btn" onclick="showContent('amsBox')">Ams Ambassador Charity Trip</button>
+          <button class="communication-btn" onclick="showContent('fundBox')">The 1% Fund</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
