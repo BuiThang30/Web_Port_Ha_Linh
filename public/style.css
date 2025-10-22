@@ -1175,6 +1175,8 @@ body {
 
   .left-menu h2 {
     font-size: 58px;
+    text-shadow: 4px 4px 0 #F07E25;
+    -webkit-text-stroke-width: 4px;
   }
 
   .left-menu h3, .left-menu h4 {
@@ -1390,6 +1392,8 @@ body {
   .left-menu h2 {
     font-size: 48px;
     text-align: center;
+    text-shadow: 3px 3px 0 #F07E25;
+    -webkit-text-stroke-width: 3px;
   }
 
   .left-menu p {
@@ -1638,6 +1642,9 @@ body {
 
   .left-menu h2 {
     font-size: 38px;
+    text-shadow: 2.5px 2.5px 0 #F07E25;
+    -webkit-text-stroke-width: 2px;
+    
   }
 
   .left-menu p {
@@ -1913,6 +1920,8 @@ body {
 
   .left-menu h2 {
     font-size: 30px;
+    text-shadow: 1px 1px 0 #F07E25;
+    -webkit-text-stroke-width: 1px;
   }
 
   .left-menu p {
