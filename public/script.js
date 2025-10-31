@@ -229,3 +229,83 @@ function goToReviewSlide(index) {
   showReviewSlide(index);
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const cheerContainer = document.getElementById('cheer-container');
+  if (!cheerContainer) return;
+
+  const firstSet = [
+    'image/cheerleading7.png',
+    'image/cheerleading8.png'
+  ];
+
+  const secondSet = [
+    'image/cheerleading9.png',
+    'image/cheerleading11.png',
+    'image/cheerleading10.png'
+  ];
+
+  let showingFirst = true;
+
+  function showSet(images) {
+    cheerContainer.innerHTML = '';
+    images.forEach(src => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = 'Cheer';
+      cheerContainer.appendChild(img);
+    });
+  }
+
+  // Hiển thị bộ ảnh đầu tiên
+  showSet(firstSet);
+
+  // Mỗi 3 giây đổi sang bộ còn lại
+  setInterval(() => {
+    if (showingFirst) {
+      showSet(secondSet);
+    } else {
+      showSet(firstSet);
+    }
+    showingFirst = !showingFirst;
+  }, 3000);
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cheerContainer = document.getElementById('cheer-container1');
+  if (!cheerContainer) return;
+
+  const firstSet = [
+    'image/cheerleading5.png',
+    'image/cheerleading6.png'
+  ];
+
+  const secondSet = [
+    'image/cheerleading12.png',
+    'image/cheerleading13.png'
+  ];
+
+  let showingFirst = true;
+
+  function showSet(images) {
+    cheerContainer.innerHTML = '';
+    images.forEach(src => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = 'Cheer';
+      cheerContainer.appendChild(img);
+    });
+  }
+
+  showSet(firstSet);
+
+  setInterval(() => {
+    if (showingFirst) {
+      showSet(secondSet);
+    } else {
+      showSet(firstSet);
+    }
+    showingFirst = !showingFirst;
+  }, 3000);
+});
+
