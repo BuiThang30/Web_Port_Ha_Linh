@@ -388,7 +388,7 @@ body {
 /* CONTENT BOX */
 
 .content{
-  max-width: 70%;
+  max-width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -502,6 +502,10 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
+
+#slideInner.no-border img {
+  border: none !important;
+}
 
 
 .hidden {
@@ -641,6 +645,27 @@ body {
   border-color: #F7CD27;
   transition: all 0.2s ease-in-out;
 }
+
+.work-links {
+  padding-left: 18px;
+
+}
+
+.work-links li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.work-links p {
+  margin: 0;
+}
+
+.work-links a {
+  word-break: break-word;
+}
+
+
 
 /* =============================== */
 /* SLIDER - SECTION */
@@ -929,9 +954,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 50px;
   flex-wrap: nowrap;
-  width: max-content
 }
 
 .poem-columns .column {

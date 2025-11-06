@@ -48,6 +48,13 @@ const data = {
       Vietnamese art. On another note, I also combined my love for arts to incorporate Vietnamese minorities’ cultural
       elements into the dances of G’LAMS Musical 2025.
     `
+  },
+  believe: {
+    title: "SPIRITUAL BELIEVER",
+    images: ["image/aboutme3.png", "image/aboutme4.png"],
+    text: `
+      Another lesser-known aspect about me is my belief in spiritual identities from both Western and Eastern worlds. I have always been intrigued by the topics of astrology and philosophy, and delving into them brings me great joy. In Wuxing, I embody the Fire element — a key factor contributing to my fiery, energetic, and bold leadership style. But zodiac-wise, I am a Cancer — a Water sign; I tend to be emotional, fluid, and flexible, often being the one to offer compassion, empathy, and advice. With both these components intertwined harmoniously instead of conflictingly, I am an individual of chaos — of both Fire and Water — and proudly so.
+    `
   }
 };
 
@@ -60,14 +67,19 @@ function showInfo(type) {
   const { title, images, text } = data[type];
 
   document.getElementById("infoTitle").textContent = title;
-
   document.getElementById("infoSubTitle").textContent = title;
-
- 
   document.getElementById("infoDescription").innerHTML = text;
 
   const img1 = document.getElementById("slideImg1");
   const img2 = document.getElementById("slideImg2");
+  const slideInner = document.getElementById("slideInner"); // <--- lưu vùng chứa ảnh
+
+  // ✅ chỉ riêng BELIEVE thì bỏ viền ảnh
+  if (type === "believe") {
+    slideInner.classList.add("no-border");
+  } else {
+    slideInner.classList.remove("no-border");
+  }
 
   if (type === "ambassador") {
     let index = 0;
@@ -83,6 +95,7 @@ function showInfo(type) {
     img2.src = images[1];
   }
 }
+
 // ============================
 // TỰ ĐỘNG HIỂN THỊ KHI VÀO URL CÓ HASH
 // ============================
@@ -309,3 +322,40 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 3000);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const cheerContainer = document.getElementById('intern-container');
+  if (!cheerContainer) return;
+
+  const firstSet = [
+    'image/intern1.png',
+    'image/intern4.png'
+  ];
+
+  const secondSet = [
+    'image/intern3.png',
+    'image/intern2.png'
+  ];
+
+  let showingFirst = true;
+
+  function showSet(images) {
+    cheerContainer.innerHTML = '';
+    images.forEach(src => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = 'Intern';
+      cheerContainer.appendChild(img);
+    });
+  }
+
+  showSet(firstSet);
+
+  setInterval(() => {
+    if (showingFirst) {
+      showSet(secondSet);
+    } else {
+      showSet(firstSet);
+    }
+    showingFirst = !showingFirst;
+  }, 3000);
+});
